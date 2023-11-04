@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Menu principal|</title>
+    <!-- nube para el carrito y demas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- encabezado -->
+    <header>
+        <a href="#" class="logo">
+            <img src="img/icono.png" alt="Logo de la pagina">
+        </a>
+        <!-- barra de navegacion -->
+        <nav class="navbar">
+            <a class="active" href="#menu">Inicio</a>
+            <a href="#categoria">Categorias</a>
+            <a href="#products">Productos</a>
+            <a href="#oferta">Ofertas</a>
+            <a href="contactenos.html">Contactenos</a>
+            <a href="manual.html">Manual</a>
+        </nav>
+        <!-- Iconos de carrito y demas -->
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <!-- este es el menu de busqueda, la ventana como tal -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Buscar" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+
+    <!-- aca empiezan los sliders -->
+    <section class="home" id="menu">
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="contenido">
+                        <span>Tus necesidades al alcance de tu mano </span>
+                        <h3>Productos Frescos Y De Buena Calidad</h3>
+                        <p>Estos son algunos de los productos que podemos ofrecerte.</p>
+                        <a href="#" class="btn">¡Ordena ahora!</a>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/bolsa.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="contenido">
+                        <span>Tus necesidades al alcance de tu mano </span>
+                        <h3>Ofertas especiales y los mejores precios</h3>
+                        <a href="#" class="btn">¡Ordena ahora!</a>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/slider1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="contenido">
+                        <span>Tus necesidades al alcance de tu mano </span>
+                        <h3>Lo que nos importa es tu felicidad</h3>
+                        <a href="#" class="btn">¡Ordena ahora!</a>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/slider2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="contenido">
+                        <span>Tus necesidades al alcance de tu mano </span>
+                        <h3>¿Que esperas para pedir los <strong>tuyos</strong>?</h3>
+                        <a href="#" class="btn">¡Ordena ahora!</a>
+                    </div>
+                    <div class="imagen">
+                        <img src="img/slider3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <!-- empieza la seccion de los anuncios -->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="img/banner1.jpg" alt="">
+            <div class="content">
+                <h3>Ofertas especiales</h3>
+                <p>Hasta el 20% de descuento</p>
+                <a href="#" class="btn">Ver aqui</a>
+            </div>
+        </div>
+        <!-- anuncio 2, el btn es el boton -->
+        <div class="banner">
+            <img src="img/banner2.jpg" alt="">
+            <div class="content">
+                <h3>Ofertas limitadas</h3>
+                <p>Hasta el 30% de descuento</p>
+                <a href="#" class="btn">Ver aqui</a>
+            </div>
+        </div>
+    </section>
+    <!-- termina el banner     -->
+
+    <!-- empiezan las categorias -->
+    <section class="categoria" id="categoria">
+
+        <h1 class="heading">Compra por <span>categoria</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Frutas y vegetales</h3>
+                <p>Hasta el 10% de descuento</p>
+                <img src="img/verduras.jpg" alt="">
+                <a href="frutasyverduras.html" class="btn">Compralo ahora</a>
+            </div>
+            <div class="box">
+                <h3>Carnes</h3>
+                <p>Hasta el 15% de descuento</p>
+                <img src="img/carne.jpg" alt="">
+                <a href="carnes.html" class="btn">Compralo ahora</a>
+            </div>
+            <div class="box">
+                <h3>Snacks</h3>
+                <p>Hasta el 5% de descuento</p>
+                <img src="img/snacks.jpg" alt="">
+                <a href="snacks.html" class="btn">Compralo ahora</a>
+            </div>
+            <div class="box">
+                <h3>Lacteos</h3>
+                <p>Hasta el 10% de descuento</p>
+                <img src="img/lacteos.jpg" alt="">
+                <a href="lacteos.html" class="btn">Compralo ahora</a>
+            </div>
+        </div>
+    </section>
+    <!-- terminan las categorias -->
+
+    <!-- comienza la seccion de productos -->
+    <section class="products" id="products">
+        <h3 class="sub-heading">Algunos de nuestros productos</h3>
+        <h1 class="heading">Productos <span>recomendados</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/huevos.png" alt="">
+                <h3>Cubeta de huevos AA</h3>
+                <div class="precio">Ahora $15.300 / <span>$17.000</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/x30</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/tomate.jpg" alt="">
+                <h3>Tomate chonto</h3>
+                <hr>
+                <div class="precio">Ahora $4.600 / <span>$5.500</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/kg</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/banana.png" alt="">
+                <h3>Banano</h3>
+                <hr>
+                <div class="precio">Ahora $7.400 / <span>$8.000</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/kg</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/arroz.png" alt="">
+                <h3>Arroz Diana </h3>
+                <hr>
+                <div class="precio">Ahora $3.800 / <span>$4.500</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/kg</span>
+                </div>
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/lentejas.png" alt="">
+                <h3>Lentejas Algran</h3>
+                <hr>
+                <div class="precio">Ahora $5.400 / <span>$6.000</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/kg</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/pasta.png" alt="">
+                <h3>Pasta Doria</h3>
+                <hr>
+                <div class="precio">Ahora $5.400 / <span>$6.400</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/kg</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/leche.png" alt="">
+                <h3>Leche Alqueria</h3>
+                <hr>
+                <div class="precio">Ahora $3.600 / <span>$4.500</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/L</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/colombina.png" alt="">
+                <h3>Colombina de pollo</h3>
+                <hr>
+                <div class="precio">Ahora $8.000 / <span>$10.000</span></div>
+                <div class="cantidad">
+                    <span>Cantidad:</span>
+                    <input type="number" min="1" max="1000" value="1">
+                    <span>/kg</span>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">Añadir al carrito</a>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- termina la seccion de productos -->
+    <!-- inicia la parte de las ofertas -->
+    <section class="ofertas" id="oferta">
+        <div class="content">
+            <h3>Oferta del dia 😏</h3>
+            <p>¡Aprovecha las ofertas que tenemos el día de hoy para comprar los diferentes productos que necesites en tu hogar, por tiempo limitado!</p>
+            <div class="temporizador">
+                <div class="box">
+                    <div class="dias" id="dias">00</div>
+                    <span>DIAS</span>
+                </div>
+
+                <div class="box">
+                    <div class="horas" id="horas">--</div>
+                    <span>HORAS</span>
+                </div>
+
+                <div class="box">
+                    <div class="minutos" id="minutos">--</div>
+                    <span>MINUTOS</span>
+                </div>
+
+                <div class="box">
+                    <div class="segundos" id="segundos">--</div>
+                    <span>SEGUNDOS</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- terminan la parte de las ofertas -->
+
+    <!-- inicia parte sobre nosotros -->
+    <section class="sobre" id="sobre">
+        <h3 class="sub-heading">Sobre nosotros</h3>
+        <h1 class="heading">¿Por que nosotros?</h1>
+        <div class="fila">
+            <div class="image">
+                <img src="img/nosotros.jpg" alt="">
+            </div>
+
+            <div class="contenido">
+                <h3>Poseemos los mejores productos de la ciudad</h3>
+                <p>En Chepe'S In Action Estamos Comprometidos A Brindarte Una Experiencia De Compra En Línea
+                    Excepcional. Nuestra Misión Es Ofrecerte La Comodidad De Adquirir Productos De Alta Calidad Desde La
+                    Comodidad De Tu Hogar. Con Un Extenso Catálogo Que Abarca Desde Alimentos Frescos Y Productos De
+                    Despensa, Hasta Artículos De Cuidado Personal Y Cuidado Del Hogar, Estamos Aquí Para Satisfacer
+                    Todas Tus Necesidades. Nuestro Equipo Trabaja Incansablemente Para Garantizar La Frescura De
+                    Nuestros Productos Y La Puntualidad En La Entrega.
+                </p>
+                <p>Valoramos La Confianza Que Deposites En Nosotros Y Nos Esforzamos Para Superar Tus Expectativas En Cada Pedido.
+                    ¡Bienvenido A Chepe'S In Action!, Tu Tienda En Línea De Confianza Para Hacer Tus Compras Diarias De Manera
+                    Conveniente Y Segura.</p>
+                <div class="contenedoricons">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Envios a toda velocidad</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Metodos de pago sencillos</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>Servicio hasta las 11pm</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Leer mas aqui</a>
+            </div>
+        </div>
+    </section>
+    <!-- termina parte sobre nosotros -->
+
+    <!-- empieza el pie de pagina -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo">Chepe'S In Action</a>
+                <p>Bienvenidos a nuestra página web. Somos un equipo apasionado y comprometido con ofrecer soluciones innovadoras a
+                    nuestros clientes, nuestra empresa se dedica a brindar servicios de alta calidad, con una trayectoria sólida y
+                    exitosa en el mercado.</p>
+                <div class="compartir">
+                    <a href="#" class="btn fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/chepes_inaction" class="btn fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/chepes_in_action/" class="btn fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Nuestra localización</h3>
+                <div class="links">
+                    <a href="#">-Soacha, Ciudad verde</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Enlaces</h3>
+                <div class="links">
+                    <a href="#menu">-Menu Principal</a>
+                    <a href="#categoria">-Categorias</a>
+                    <a href="#products">-Productos</a>
+                    <a href="#oferta">-Ofertas</a>
+                    <a href="contactenos.html"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Informacion de contacto</h3>
+                <div class="links">
+                    <a href="#">+57 3212943545</a>
+                    <a href="#">+57 3193213847</a>
+                    <a href="#">+57 3143650742</a>
+                    <a href="#">+57 3014238188</a>
+                    <a href="#">santiagoan.garciago@ecci.edu.co</a>
+                    <a href="#">julianda.medinaga@ecci.edu.co</a>
+                    <a href="#">cristianca.cardenasva@ecci.edu.co</a>
+                    <a href="#">kevinan.perezbu@ecci.edu.co</a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="creditos">Copyright o actualizacion 2023 <span>Chepe'S In Action</span> | Derechos reservados</h1>
+    </section>
+    <!-- termina el pie de pagina -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

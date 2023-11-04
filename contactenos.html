@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Contactenos|</title>
+     <!-- nube para el carrito y demas -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link rel="stylesheet" href="css/contactenos.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <a href="#" class="logo">
+            <img src="img/icono.png" alt="Logo de la pagina">
+        </a>
+        <!-- barra de navegacion -->
+        <nav class="navbar">
+            <a class="active" href="#menu">Inicio</a>
+            <a href="#categoria">Categorias</a>
+            <a href="#products">Productos</a>
+            <a href="#oferta">Ofertas</a>
+            <a href="contactenos.html">Contactenos</a>
+            <a href="manual.html">Manual</a>
+        </nav>
+        <!-- Iconos de carrito y demas -->
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <!-- este es el menu de busqueda, la ventana como tal -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Buscar" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <section class="container-form">
+        <div class="info-form">
+            <h2>Contactanos</h2>
+            <p>Hola, ¡esperamos que te encuentres muy bien!, para poder avanzar con nuestro proyecto, hemos diseñado un medio por el
+                cual podras contactar con nosotros, darnos tus sugerencias, reclamos o alguna otra peticion, esperamos que sea de
+                gran utilidad para ti.</p>
+            <a href="#"><i class="fa fa-phone">3224657844</i></a>
+            <a href="#"><i class="fa fa-envelope"></i>Cristianca.cardenasva@ecci.edu.co</a>
+            <a href="#"><i class="fa fa-map-marked"></i>Bogota, Colombia</a>
+        </div>
+        <form action="#" autocomplete="off">
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+            <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
+            <textarea name="mensaje" placeholder="Ingresa tu peticion"></textarea>
+            <input type="submit" name="enviar" value="Enviar mensaje" class="btn-enviar">
+        </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

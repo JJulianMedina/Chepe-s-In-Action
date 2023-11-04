@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700&display=swap');
+
+/* green: #27ae60
+black:#192a56
+light-color: #666
+boxshadow:0.5 rem 1.5rem rgba(0,0,0.1) */
+
+*{
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+	background: rgb(3, 41, 51);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 .2rem 10px rgb(114, 93, 93);
+}
+
+header .logo{
+	display: flex;
+	align-items: center;
+	font-size: 3rem;
+}
+
+.logo img{
+	height: 70px;
+	margin-left: 12px;
+}
+
+.navbar a{
+	font-size: 1.7rem;
+	border-radius: .5rem;
+	padding: .5rem 1.6rem;
+	color: #d4d4d4;
+	text-decoration: none;
+}
+
+header .navbar a.active,
+.navbar a:hover{
+	color: white;
+	background: rgb(116, 5, 5);
+}
+
+@media (max-width:700px){
+	header{
+		flex-direction: column;
+	}
+
+	nav{
+		padding: 10px 0px;
+	}
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	background-image: url(../img/imagenini.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 122vh;
+}
+
+form{
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	box-shadow: 0 0 20px rgb(190, 184, 184);
+	border-radius: 15px;
+	background-color: #EEEEEE;
+}
+
+h2{
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+label, p {
+	font-size: 17px;
+	color: #575757;
+	margin-bottom: 5px;
+}
+
+input{
+	padding: 13px 11px;
+	border: 1px solid rgb(3, 41, 51);
+	border-radius: 25px;
+	margin-bottom: 5px;
+	background-color: #fafafc;
+	outline: none;
+	color: rgb(14, 11, 11);
+	font-size: 16px;
+}
+
+select{
+    padding: 13px;
+    border: 1px solid rgb(3, 41, 51);
+    border-radius: 25px;
+    background-color: #fafafc;
+    color: rgb(14, 11, 11);
+	font-size: 16px;
+
+}
+
+option{
+    color: #666;
+}
+
+.btn-1{
+	background-color:rgb(3, 41, 51) ;
+	font-size: 15px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn-1:hover{
+	background-color: rgb(116, 5, 5);
+	transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+	body{
+		padding: 30px;
+	}
+
+	form{
+		width: 100%;
+	}
+
+	.remember{
+		flex-direction: column;
+	}
+}
